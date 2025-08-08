@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #fefefe;
+  color: #333;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  max-width: 700px;
+  padding: 2rem 1rem;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #6200ee;
+}
+
+.description {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+md-filled-button {
+  margin-top: 1rem;
+  display: block;
+}
+
+.output-section {
+  margin-top: 2rem;
+}
+
+.result-box {
+  padding: 1rem;
+  margin-top: 0.5rem;
+  white-space: pre-wrap;
+}
+
+.steps {
+  background-color: #f3f3f3;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  white-space: pre-wrap;
+}
