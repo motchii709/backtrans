@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>逆翻訳マシーン</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="https://unpkg.com/@material/web/all.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>🔄 逆翻訳マシーン</h1>
+      <p class="description">
+        入力された文章を複数の言語で翻訳し、最終的に日本語へ再翻訳します。
+      </p>
+
+      <md-outlined-text-field id="inputText" label="元の文章" rows="6" textarea></md-outlined-text-field>
+
+      <md-filled-button id="translateBtn">翻訳開始</md-filled-button>
+
+      <section class="output-section">
+        <h2>🎯 最終結果：</h2>
+        <md-elevated-card class="result-box" id="finalOutput"></md-elevated-card>
+
+        <h2>🔁 翻訳の過程：</h2>
+        <div class="steps" id="stepsOutput"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
