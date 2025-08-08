@@ -1,0 +1,106 @@
+/* Basic Setup & Theming */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--md-sys-color-background);
+    color: var(--md-sys-color-on-background);
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    margin: 0;
+}
+
+main {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+h1 {
+    color: var(--md-sys-color-primary);
+}
+
+/* Utility */
+.full-width {
+    width: 100%;
+}
+
+/* Input Section */
+md-outlined-text-field {
+    --md-outlined-text-field-container-shape: 16px;
+}
+
+/* Language Settings */
+#language-selector-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+#language-select {
+    flex-grow: 1; /* Allow select to take available space */
+}
+
+#selected-languages {
+    margin-top: 8px;
+}
+
+/* Loading Indicator */
+#loading-indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 24px 0;
+    color: var(--md-sys-color-primary);
+}
+
+/* Output Section */
+#output-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+#final-result-card {
+    background-color: var(--md-sys-color-primary-container);
+    color: var(--md-sys-color-on-primary-container);
+    border: 1px solid var(--md-sys-color-primary);
+}
+
+.final-text {
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.step-card {
+    background-color: var(--md-sys-color-surface-variant);
+    color: var(--md-sys-color-on-surface-variant);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    body {
+        padding: 8px;
+    }
+
+    main {
+        gap: 16px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    #language-selector-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}

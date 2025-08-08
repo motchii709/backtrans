@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>逆翻訳マシーン</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@material/web@1.0.0/index.js"></script>
+</head>
+<body>
+    <main>
+        <h1>逆翻訳マシーン</h1>
+        <p>日本語の文章を多言語翻訳し、意味の変化を楽しもう！</p>
+
+        <section id="input-section">
+            <md-outlined-text-field
+                label="日本語の原文"
+                type="textarea"
+                rows="5"
+                id="source-text"
+                class="full-width"
+            ></md-outlined-text-field>
+        </section>
+
+        <section id="language-settings">
+            <h2>中間言語（順番に翻訳されます）</h2>
+            <div id="language-selector-container">
+                <md-outlined-select id="language-select" label="言語を追加">
+                    <!-- Options will be populated by script.js -->
+                </md-outlined-select>
+                <md-filled-button id="add-language-button">
+                    追加
+                    <span class="material-symbols-outlined">add</span>
+                </md-filled-button>
+            </div>
+            <md-chip-set id="selected-languages"></md-chip-set>
+        </section>
+
+        <md-filled-button id="translate-button" class="full-width">
+            翻訳を実行
+            <span class="material-symbols-outlined">translate</span>
+        </md-filled-button>
+
+        <div id="loading-indicator" style="display: none;">
+            <md-linear-progress indeterminate></md-linear-progress>
+            <p>翻訳中...</p>
+        </div>
+
+        <section id="output-section">
+            <!-- Results will be populated here -->
+        </section>
+    </main>
+
+    <script src="langs.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
