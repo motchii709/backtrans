@@ -1,0 +1,18 @@
+const supportedLanguages = [
+  { code: "en", name: "英語" },
+  { code: "fr", name: "フランス語" },
+  { code: "de", name: "ドイツ語" },
+  { code: "es", name: "スペイン語" },
+  { code: "it", name: "イタリア語" },
+  { code: "pt", name: "ポルトガル語" },
+  { code: "ru", name: "ロシア語" },
+  { code: "zh", name: "中国語" },
+  { code: "ko", name: "韓国語" },
+  { code: "ar", name: "アラビア語" },
+  { code: "hi", name: "ヒンディー語" },
+  { code: "ja", name: "日本語" },
+  { code: "ug", name: "ウイグル語" },
+  { code: "la", name: "ラテン語" },
+  { code: "ky", name: "キルギス語" },
+  { code: "xh", name: "コーサ語" },
+];
